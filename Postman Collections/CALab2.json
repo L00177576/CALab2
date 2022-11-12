@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "07d1001b-4d59-4e8f-8460-2efa6c2876e4",
+		"name": "StudioGhibli",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "People",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "72348b3c-8edf-40ca-a2ee-1b0321e94d21",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "8239ddfd-30a2-4b1f-9569-b9051dbf1a9d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://ghibliapi.herokuapp.com/people"
+			},
+			"response": []
+		},
+		{
+			"name": "Films",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "90021b2d-1a8c-4581-976f-3bdcfbfb6750",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "0fbc89fe-c6d3-4d84-8fa0-e0c8723296f3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://ghibliapi.herokuapp.com/films"
+			},
+			"response": []
+		},
+		{
+			"name": "Locations",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3abe740e-481e-4dbf-a73f-b476c15325d9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "535ce9a2-9277-42c0-9548-006abfbd898c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://ghibliapi.herokuapp.com/locations"
+			},
+			"response": []
+		},
+		{
+			"name": "Species",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "88798f9a-777a-4092-99bd-0af0ae65a0f3",
+						"exec": [
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"Human11\");\r",
+							"}); "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "46f8499c-4d09-44f7-be6a-558a576cde3b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://ghibliapi.herokuapp.com/species"
+			},
+			"response": []
+		},
+		{
+			"name": "Vehicles",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f31a1948-5db5-4fd3-9b2a-028c9b1fe818",
+						"exec": [
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"Test\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "1535d338-9ad5-411f-8619-efad0e2485e1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://ghibliapi.herokuapp.com/vehicles"
+			},
+			"response": []
+		},
+		{
+			"name": "FindPerson",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ae2a863e-1dfe-470d-97ab-03e0696ae0cb",
+						"exec": [
+							"pm.test(\"response should be okay to process\", function () {\r",
+							"    pm.response.to.not.be.error;\r",
+							"    pm.response.to.not.have.jsonBody(\"error\");\r",
+							"    pm.response.to.not.have.jsonBody(\"\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"response must be valid and have a body\", function () {\r",
+							"     pm.response.to.be.ok;\r",
+							"     pm.response.to.be.withBody;\r",
+							"     pm.response.to.be.json;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "c9c98484-9d2f-4a54-bdff-11da3c01ee35",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ghibliapi.herokuapp.com/people?name=Totoro&eye_color=Grey",
+					"protocol": "https",
+					"host": [
+						"ghibliapi",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"people"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Totoro"
+						},
+						{
+							"key": "eye_color",
+							"value": "Grey"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
