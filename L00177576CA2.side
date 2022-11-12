@@ -1,0 +1,209 @@
+{
+  "id": "402e67f2-7792-4d35-afdc-cf0a58d768e0",
+  "version": "2.0",
+  "name": "L00177576CA2",
+  "url": "http://demo.guru99.com/test/newtours/",
+  "tests": [{
+    "id": "1f26f072-1f32-4d70-a2e8-494bee9a717e",
+    "name": "Login_Test",
+    "commands": [{
+      "id": "b3013cc2-28fa-4933-ade0-9dac3dcd8532",
+      "comment": "",
+      "command": "open",
+      "target": "/test/newtours/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0573abd-4405-4d73-bb9d-e93141dc9571",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d439f4f7-095e-4200-a7fd-9d38c3566406",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Bank Project",
+      "targets": [
+        ["linkText=Bank Project", "linkText"],
+        ["css=.dropdown:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Bank Project')]", "xpath:link"],
+        ["xpath=//div[@id='navbar-brand-centered']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://demo.guru99.com/V1/index.php']", "xpath:href"],
+        ["xpath=//div/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bank Project')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0925184-f0f6-4250-aba7-e74af8521050",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Bank Project",
+      "targets": [
+        ["linkText=Bank Project", "linkText"],
+        ["css=.dropdown:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Bank Project')]", "xpath:link"],
+        ["xpath=//div[@id='navbar-brand-centered']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://demo.guru99.com/V1/index.php']", "xpath:href"],
+        ["xpath=//div/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bank Project')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f633599b-55c9-4aaf-a999-142fe0c83d52",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84277ab4-4308-48a6-93e2-f60321ad746b",
+      "comment": "",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "4291c973-207b-4483-8182-8ae2112788ad",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "b258a71b-06fe-4ed7-aba6-bd312d925d49",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "38b64414-9673-4748-84b1-28d493824d57",
+    "name": "InvalidLogin_Test",
+    "commands": [{
+      "id": "7301bad7-1842-4d0a-b7db-c31f7c32cd03",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.guru99.com/test/newtours/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79022f4f-5bd9-4afa-a3c9-7f0947c114f2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98fab3fa-ceb3-4c13-9bee-581fb0b21a97",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9945b2d-c3b6-4628-9ffc-c68b4167b628",
+      "comment": "",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "b038f5fe-91fb-4e6a-b7c2-1e80dde7f688",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "admin11"
+    }, {
+      "id": "bbbfee52-0977-4eab-88ad-520932f7e604",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc64eb12-b1d9-48e4-b183-f87ea746daf3",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(5)",
+      "targets": [
+        ["css=div:nth-child(5)", "css:finder"],
+        ["xpath=//body/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e59f09c3-804a-4cb8-bf2f-8f5547e9fbed",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > td > table > tbody > tr:nth-child(3) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(4) > td > table > tbody > tr:nth-child(3) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[4]/td/table/tbody/tr[3]/td[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "379d6245-7d88-4c8d-a466-15d131a1ed5b",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > td > table > tbody > tr:nth-child(3) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(4) > td > table > tbody > tr:nth-child(3) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[4]/td/table/tbody/tr[3]/td[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1629b5aa-65b4-447f-ac9d-5dc93edc5d00",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1f26f072-1f32-4d70-a2e8-494bee9a717e"]
+  }],
+  "urls": ["https://demo.guru99.com/", "http://demo.guru99.com/test/newtours/"],
+  "plugins": []
+}
