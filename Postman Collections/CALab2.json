@@ -21,7 +21,7 @@
 					}
 				}
 			],
-			"_postman_id": "8239ddfd-30a2-4b1f-9569-b9051dbf1a9d",
+			"id": "8239ddfd-30a2-4b1f-9569-b9051dbf1a9d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -48,7 +48,7 @@
 					}
 				}
 			],
-			"_postman_id": "0fbc89fe-c6d3-4d84-8fa0-e0c8723296f3",
+			"id": "0fbc89fe-c6d3-4d84-8fa0-e0c8723296f3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -67,15 +67,15 @@
 					"script": {
 						"id": "3abe740e-481e-4dbf-a73f-b476c15325d9",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
 							"});"
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
-			"_postman_id": "535ce9a2-9277-42c0-9548-006abfbd898c",
+			"id": "535ce9a2-9277-42c0-9548-006abfbd898c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -102,7 +102,7 @@
 					}
 				}
 			],
-			"_postman_id": "46f8499c-4d09-44f7-be6a-558a576cde3b",
+			"id": "46f8499c-4d09-44f7-be6a-558a576cde3b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -129,7 +129,7 @@
 					}
 				}
 			],
-			"_postman_id": "1535d338-9ad5-411f-8619-efad0e2485e1",
+			"id": "1535d338-9ad5-411f-8619-efad0e2485e1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -164,7 +164,7 @@
 					}
 				}
 			],
-			"_postman_id": "c9c98484-9d2f-4a54-bdff-11da3c01ee35",
+			"id": "c9c98484-9d2f-4a54-bdff-11da3c01ee35",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
